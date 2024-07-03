@@ -1,17 +1,17 @@
 from random import randint
 from time import sleep
 
-lista = ("Rock", "Paper", "Scissors")
+lista = ("Pedra", "Papel", "Tesoura")
 
 computer = randint(0, 2)
 
-ask = int(input('''Choose an option to play:
+ask = int(input('''Escolha uma opção para jogar:
 
-[0] Stone
-[1] Role
-[2] Scissors
+[0] Pedra
+[1] Papel
+[2] Tesoura
 
-Enter your choice: '''))
+Insira sua escolha: '''))
 
 print("JO\n")
 sleep(1)
@@ -20,38 +20,38 @@ sleep(1)
 print("POO!\n")
 
 print("-="*20)
-print("The computer chose: {}".format(lista[computer]))
-print("The player chose: {}".format(lista[ask]))
+print("O computador escolheu: {}".format(lista[computer]))
+print("O jogador escolheu: {}".format(lista[ask]))
 print("-="*20)
 
 if computer == 0:
     if ask == 0:
-        print("A tie!")
+        print("Uma gravata!")
     elif ask == 1:
-        print("Player lost!")
+        print("Jogador perdeu!")
     elif ask == 2:
-        print("Computer won!")
+        print("Computador ganhou!")
     else:
-        print("Invalid Operation!")
+        print("Operação inválida!")
 
 elif computer == 1:
     if ask == 0:
-        print("Computer lost!")
+        print("Computador perdeu!")
     elif ask == 1:
-        print("A tie!")
+        print("Uma gravata!")
     elif ask == 2:
-        print("Player won!")
+        print("Jogador ganhou!")
     else:
-        print("Invalid Operation!")
+        print("Operação inválida!")
 
 elif computer == 2:
     if ask == 0:
-        print("Player won!")
+        print("Jogador ganhou!")
     elif ask == 1:
-        print("Computer won!")
+        print("Computador perdeu!")
     elif ask == 2:
-        print("A tie!")
+        print("Uma gravata!")
     else:
-        print("Invalid Operation!")
+        print("Operação inválida!")
 else:
-    print("Invalid Operation!")
+    print("Operação inválida!")
